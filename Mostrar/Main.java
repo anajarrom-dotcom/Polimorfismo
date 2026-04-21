@@ -6,8 +6,10 @@ import Mostrar.clases.Avion;
 import Mostrar.clases.CuentaAhorro;
 import Mostrar.clases.Cuentaa;
 import Mostrar.clases.Empleado;
+import Mostrar.clases.Estudiante;
 import Mostrar.clases.Figura;
 import Mostrar.clases.Perro;
+import Mostrar.clases.Persona;
 import Mostrar.clases.Rectangulo;
 import Mostrar.clases.Transporte;
 import Mostrar.clases.Vendedor;
@@ -22,8 +24,9 @@ public class Main {
 		System.out.println("2.Figura y rectangulo");
 		System.out.println("3.Empleado y vendedor");
 		System.out.println("4.Cuenta y CuentaAhorro");
-		System.out.println("4.Transporte y Avion");
-	
+		System.out.println("5.Transporte y Avion");
+		System.out.println("6.Persona y Estudiante");
+		
 		int opcion = sc.nextInt();
 		switch( opcion) {
 		case  1:
@@ -40,6 +43,9 @@ public class Main {
 			break;
 		case 5:
 			ejercicio5();
+			break;
+		case 6:
+			ejercicio6();
 			break;
 		}
 		}
@@ -72,6 +78,12 @@ public class Main {
 		Transporte transporte = new Avion();
 		
 		transporte.moverse();
+	}
+	
+	public static void ejercicio6() {
+		
+		Persona persona = new Estudiante("Antony", "0905-25-11238", "Ingenieria en sistemas de informacion y ciencias de la computacion");
+		persona.presentarse();
 	}
 	}
 	
