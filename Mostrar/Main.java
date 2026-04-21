@@ -8,6 +8,8 @@ import Mostrar.clases.Cuentaa;
 import Mostrar.clases.Empleado;
 import Mostrar.clases.Estudiante;
 import Mostrar.clases.Figura;
+import Mostrar.clases.Guitarra;
+import Mostrar.clases.Instrumento;
 import Mostrar.clases.Motocicleta;
 import Mostrar.clases.Perro;
 import Mostrar.clases.Persona;
@@ -32,6 +34,8 @@ public class Main {
 		System.out.println("6.Persona y Estudiante");
 		System.out.println("7.Vehiculo y Motocicleta");
 		System.out.println("8.Producto y ProductoDigital");
+		System.out.println("9.Instrumento y Guitarra");
+		System.out.println("10.Trabajador y TrabajadorPorHora");
 		
 		int opcion = sc.nextInt();
 		switch( opcion) {
@@ -58,6 +62,9 @@ public class Main {
 			break;
 		case 8:
 			ejercicio8();
+			break;
+		case 9:
+			ejercicio9();
 			break;
 			}
 		}
@@ -108,6 +115,11 @@ public class Main {
 		
 		Producto producto = new ProductoDigital("Don JUlio Real", 2500);
 		producto.mostrarDescripccion();
+	}
+	
+	public static void ejercicio9() {
+		Instrumento instrumento = new Guitarra();
+		instrumento.tocar();
 	}
 	}
 	
