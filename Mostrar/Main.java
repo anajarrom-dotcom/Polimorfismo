@@ -2,12 +2,14 @@ package Mostrar;
 
 import java.util.Scanner;
 import Mostrar.clases.Animal;
+import Mostrar.clases.Avion;
 import Mostrar.clases.CuentaAhorro;
 import Mostrar.clases.Cuentaa;
 import Mostrar.clases.Empleado;
 import Mostrar.clases.Figura;
 import Mostrar.clases.Perro;
 import Mostrar.clases.Rectangulo;
+import Mostrar.clases.Transporte;
 import Mostrar.clases.Vendedor;
 
 public class Main {
@@ -20,6 +22,7 @@ public class Main {
 		System.out.println("2.Figura y rectangulo");
 		System.out.println("3.Empleado y vendedor");
 		System.out.println("4.Cuenta y CuentaAhorro");
+		System.out.println("4.Transporte y Avion");
 	
 		int opcion = sc.nextInt();
 		switch( opcion) {
@@ -34,6 +37,9 @@ public class Main {
 			break;
 		case 4:
 			ejercicio4();
+			break;
+		case 5:
+			ejercicio5();
 			break;
 		}
 		}
@@ -59,6 +65,13 @@ public class Main {
 		Cuentaa micuenta = new CuentaAhorro(1400);
 	
 	System.out.println(micuenta.depositar(0));
+	}
+	
+	public static void ejercicio5() {
+		
+		Transporte transporte = new Avion();
+		
+		transporte.moverse();
 	}
 	}
 	
