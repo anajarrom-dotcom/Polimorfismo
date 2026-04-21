@@ -2,6 +2,8 @@ package Mostrar;
 
 import java.util.Scanner;
 import Mostrar.clases.Animal;
+import Mostrar.clases.CuentaAhorro;
+import Mostrar.clases.Cuentaa;
 import Mostrar.clases.Empleado;
 import Mostrar.clases.Figura;
 import Mostrar.clases.Perro;
@@ -17,7 +19,7 @@ public class Main {
 		System.out.println("1.Animal y perro");
 		System.out.println("2.Figura y rectangulo");
 		System.out.println("3.Empleado y vendedor");
-		System.out.println("");
+		System.out.println("4.Cuenta y CuentaAhorro");
 	
 		int opcion = sc.nextInt();
 		switch( opcion) {
@@ -29,6 +31,9 @@ public class Main {
 			break;
 		case 3:
 			ejercicio3();
+			break;
+		case 4:
+			ejercicio4();
 			break;
 		}
 		}
@@ -47,6 +52,13 @@ public class Main {
 		Empleado empleado = new Vendedor("Lucas", 4500);
 		
 		System.out.println(empleado.resumen());
+	}
+	
+	public static void ejercicio4() {
+		
+		Cuentaa micuenta = new CuentaAhorro(1400);
+	
+	System.out.println(micuenta.depositar(0));
 	}
 	}
 	
