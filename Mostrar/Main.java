@@ -16,6 +16,8 @@ import Mostrar.clases.Persona;
 import Mostrar.clases.Producto;
 import Mostrar.clases.ProductoDigital;
 import Mostrar.clases.Rectangulo;
+import Mostrar.clases.Trabajador;
+import Mostrar.clases.TrabajadorPorHora;
 import Mostrar.clases.Transporte;
 import Mostrar.clases.Vehiculo;
 import Mostrar.clases.Vendedor;
@@ -65,6 +67,9 @@ public class Main {
 			break;
 		case 9:
 			ejercicio9();
+			break;
+		case 10:
+			ejercicio10();
 			break;
 			}
 		}
@@ -120,6 +125,11 @@ public class Main {
 	public static void ejercicio9() {
 		Instrumento instrumento = new Guitarra();
 		instrumento.tocar();
+	}
+	
+	public static void ejercicio10() {
+		Trabajador trabajador = new TrabajadorPorHora(5);
+		System.out.println(trabajador.calcularPago());
 	}
 	}
 	
