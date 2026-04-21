@@ -11,6 +11,8 @@ import Mostrar.clases.Figura;
 import Mostrar.clases.Motocicleta;
 import Mostrar.clases.Perro;
 import Mostrar.clases.Persona;
+import Mostrar.clases.Producto;
+import Mostrar.clases.ProductoDigital;
 import Mostrar.clases.Rectangulo;
 import Mostrar.clases.Transporte;
 import Mostrar.clases.Vehiculo;
@@ -29,6 +31,7 @@ public class Main {
 		System.out.println("5.Transporte y Avion");
 		System.out.println("6.Persona y Estudiante");
 		System.out.println("7.Vehiculo y Motocicleta");
+		System.out.println("8.Producto y ProductoDigital");
 		
 		int opcion = sc.nextInt();
 		switch( opcion) {
@@ -53,7 +56,10 @@ public class Main {
 		case 7:
 			ejercicio7();
 			break;
-		}
+		case 8:
+			ejercicio8();
+			break;
+			}
 		}
 	public static void ejercicio1() {
 		
@@ -96,6 +102,12 @@ public class Main {
 		
 		Vehiculo vehiculo = new Motocicleta();
 		vehiculo.encender();
+	}
+	
+	public static void ejercicio8() {
+		
+		Producto producto = new ProductoDigital("Don JUlio Real", 2500);
+		producto.mostrarDescripccion();
 	}
 	}
 	
